@@ -8,7 +8,6 @@ This project is a Node.js-based authentication system with role-based access con
 - **Role-Based Access Control (RBAC)**: Three roles - User, Admin, and Sub-admin, each with different access levels.
 - **Protected Routes**: Routes are protected based on user roles using middleware.
 - **Admin Features**: Admin can view all users and assign tasks to sub-admins.
-- **Sub-admin Features**: Sub-admin has restricted access to specific functionalities.
 - **MongoDB**: MongoDB is used to store user information and tasks.
 
 ## Table of Contents
@@ -87,11 +86,6 @@ You need to create a `.env` file in the root directory with the following variab
 | `/api/admin-dashboard`  | GET    | Admin-only access (Protected)           |
 | `/api/admin/users`      | GET    | View all users (Admin only) (Protected) |
 
-### 3. **Sub-admin Routes**
-
-| Route                     | Method | Description                                |
-|---------------------------|--------|--------------------------------------------|
-| `/api/sub-admin-dashboard` | GET    | Sub-admin dashboard access (Protected)     |
 
 ## Postman Testing
 
@@ -138,9 +132,5 @@ You need to create a `.env` file in the root directory with the following variab
 - **Mongoose**: MongoDB object modeling tool.
 - **JWT**: JSON Web Tokens for authentication.
 - **bcrypt.js**: For hashing passwords.
-
-## License
-
-This project is licensed under the MIT License.
 
 
